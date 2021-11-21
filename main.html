@@ -210,14 +210,11 @@
 		
 		</style>
 		<script type="text/javascript">
-			document.addEventListener('click', musicPlay);
-		function musicPlay() {
-		document.getElementById('music1').play();
-		document.removeEventListener('click', musicPlay);
-		}
+			
 			$(function(){
 				$("#button").click(function(){
 					$(this).toggle();
+					document.getElementById('music1').play();
 				// $("#hday_title").fadeIn(1000,function(){
 				$(".typewriter h1").delay(1200).fadeIn(1000);
 				$(".img1").delay(1000).fadeIn(1000).fadeOut(2500,0,function(){
@@ -332,7 +329,7 @@
 	<div class="container text-center pt-3"  style="height:200px" >
 		
 		<h1 id="hday_title" style="color: #e6g2ff"><span>HAPPY </span><span> BIRTHDAY</span></h1>
-		<audio id="music1" autoplay>
+		<audio id="music1">
 			<source src="harrystyles.mp3" type="audio/mpeg">
 		</audio>
 	</div>
