@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+		<title>Ramc_tech</title>
+		<link rel="stylesheet" href="">
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<style>
+
+			
+		#bgimg{
+		background-image:url('bgnew3.jpg');
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-attachment:fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(1, 1, 1, 0.1);
+		font-family: 'Oswald', sans-serif;
+
+		}
+		.login-form {
+		width: 90%;
+		margin-top: 20%;
+		margin-left: 5%;
+		margin-bottom: 15px;
+		background: #f7f7f7;
+		box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+		padding: 30px;
+		 font-family: 'Abril Fatface', cursive; 
+
+		}
+		.login-form form {
+		margin-bottom: 15px;
+		background: #f7f7f7;
+		/* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
+		padding: 30px;
+		}
+		.login-form h2 {
+		margin: 0 0 15px;
+		}
+		.form-control, .btn {
+		min-height: 38px;
+		border-radius: 2px;
+		}
+		.input-group-addon .fa {
+		font-size: 20px;
+		}
+		.btn {
+		font-size: 15px;
+		font-weight: bold;
+		}
+		.bottom-action {
+		font-size: 14px;
+		}
+
+		@media only screen and (max-width: 600px){
+			#accept{
+				display: none;
+			}
+			#notaccept{
+				display: block;
+			}
+		}
+
+		</style>
+	</head>
+	<body id="bgimg">
+
+
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top" style="font-family: 'Oswald', sans-serif;">
+			
+			<a class="navbar-brand" href="#">RamC_Tech</a>
+			
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse " id="collapsibleNavbar" >
+				<ul class="navbar-nav ml-auto text-center">
+					<li class="nav-item" style="margin-right: 10px;margin-left: 10px;">
+						<a class="nav-link text-white" href="#">HOME <i class="fa fa-fw fa-home " style="font-size: 20px;"></i></a>
+					</li>
+					<li class="nav-item" style="margin-right: 10px;margin-left: 10px;">
+		
+						<a  class="nav-link text-white btn " type="button"  data-toggle="modal" data-target="#Modal" >ABOUT-US <i class="fa fa-book " style="font-size: 20px;"></i></a>
+							
+					</li>
+					
+				</ul>
+			</div>
+		</nav>
+
+			
+			<div class="container " style="width:50%; height: 50%; ">
+				
+				<div class="login-form">
+					<form action="" method="post">
+						<h2 class="text-center" style="color:hotpink;">WELCOME</h2>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">
+										
+									</span>
+								</div>
+								<input name="email" class="form-control" placeholder="Enter Your Code" required="required">
+							</div>
+						</div>
+						
+						<div class="form-group text-center" style="color: pink;">
+							<button name="submit" type="submit"  style="color: white;"  id="accept"><a href="main.html">Accept Present</a></button>
+						</div>
+						<div class="container" id="notaccept" style="display:none;">
+							<p style="color:red; font-weight: bold;"> Please open in a Desktop/ Laptop</p>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+	</div>
+	<div id="Modal" class="modal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+      	 <h4 class="modal-title">ABOUT US</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+       
+      </div>
+      <div class="modal-body">
+        <p>'OnlyForYou' Website is designed and Presented to someone, who I really care about. This is for only for presenting purpose not for publishing purposes. Thank You for understanding</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+   </div>
+</div>
+</body>
+</html>
